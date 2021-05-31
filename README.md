@@ -1,17 +1,27 @@
 ## format-sync - Uma package para facilitar a formatação de valores number
 
-Como Utilizar?
+Como Utilizar? / How to use?
 
 ```shell
 npm i format-sync
 ```
 
 ```js
-const { formatNumberEn, formatNumberBr } = require('fomart-sync')
+const { formatEn, formatBr } = require('fomart-sync')
 ```
 
-- formatNumberEn(): 
-     Essa função irá formatar o valor number para en-us
+- formatEn(): 
+     Essa função irá formatar o valor number para en-us / This function will format the number value for en-us
      
-- formatNumberBr():
-     Essa função irá formatar o valor number para pt-br
+- formatBr():
+     Essa função irá formatar o valor number para pt-br / This function will format the number value for pt-br
+
+Exemplos / Examples:
+
+```js
+const { formatEn, formatBr } = require('fomart-sync')
+
+let valor = 1500
+
+let valor2 = formatEn(valor)
+```

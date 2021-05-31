@@ -1,4 +1,4 @@
-function formatNumberEn(number) {
+function formatEn(number) {
     if (typeof number === 'String') number = Number(number);
     number = number.toLocaleString('en-US')
     number = number.split('')
@@ -17,7 +17,7 @@ function formatNumberEn(number) {
     return (finalStr + matches[sepCount])
 }
 
-function formatNumberBr(number) {
+function formatBr(number) {
     if (typeof number === 'String') number = Number(number);
     number = number.toLocaleString('pt-br')
     number = number.split('')
@@ -33,4 +33,4 @@ function formatNumberBr(number) {
     return (finalStr + [sepCount])
 }
 
-module.exports = { formatNumberEn, formatNumberBr }
+module.exports = { formatEn, formatBr }
